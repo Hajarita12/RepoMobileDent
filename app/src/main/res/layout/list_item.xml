@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+
+    app:cardCornerRadius="20dp">
+
+    <RelativeLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+
+        android:paddingVertical="20dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif-monospace"
+            android:textColor="#1452a3"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:text="Title" />
+
+
+        <ImageView
+            android:id="@+id/target"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/target" />
+
+        <TextView
+            android:id="@+id/obj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_toEndOf="@id/target"
+            android:fontFamily="serif-monospace"
+            android:text="Objectif :"
+            android:textColor="#a0d5d5"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/objectif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/obj"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="20dp"
+            android:fontFamily="serif-monospace"
+            android:textSize="20dp"
+            android:text="contenu de objectif" />
+
+        <ImageView
+            android:id="@+id/dent"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/objectif"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/dent"
+            />
+
+        <TextView
+            android:id="@+id/t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/dent"
+            android:layout_below="@id/objectif"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif-monospace"
+            android:textColor="#a0d5d5"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Dent :" />
+
+        <TextView
+            android:id="@+id/tooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t"
+            android:layout_marginStart="20dp"
+            android:fontFamily="serif-monospace"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:text="Nom du dent" />
+
+        <TextView
+            android:id="@+id/studentid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="298dp"
+            tools:layout_editor_absoluteY="103dp"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/pwid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="298dp"
+            tools:layout_editor_absoluteY="103dp"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
